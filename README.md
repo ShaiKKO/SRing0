@@ -2,15 +2,13 @@
 
 A secure, drop-in replacement for the vulnerable WinRing0 driver (CVE-2020-14979).
 
+EV Certificate Shortly.
+
 ## Overview
 
-SafeRing0 provides WinRing0-compatible hardware access (MSR, physical memory, I/O ports, PCI config) with proper security controls that the original WinRing0 driver lacked.
+SafeRing0 provides WinRing0 compatible hardware access (MSR, physical memory, I/O ports, PCI config) with actual security controls that the original WinRing0 driver lacks.
 
-### What This Fixes
-
-The original WinRing0.sys driver (used by HWiNFO, MSI Afterburner, OpenHardwareMonitor, and many others) has a critical vulnerability: **any process can access it**, enabling local privilege escalation to SYSTEM.
-
-SafeRing0 fixes this by:
+SafeRing0 does this by:
 
 1. **Device ACL** - Only SYSTEM and Administrators can access the driver
 2. **MSR Blacklist** - Blocks writes to dangerous MSRs (IA32_LSTAR, etc.) that enable kernel code execution
@@ -68,12 +66,6 @@ bcdedit /set testsigning on
 sc create SafeRing0 type=kernel binPath="C:\path\to\safering0.sys"
 sc start SafeRing0
 ```
-
-### Production
-
-For production use, the driver must be attestation-signed or WHQL-certified through Microsoft's Partner Center.
-
-## Usage
 
 ### Migration from WinRing0
 
@@ -148,14 +140,6 @@ Events:
 - PCI_CONFIG: ProcessId, PciAddress, RegAddress, Direction
 ```
 
-## Contributing
-
-Contributions are welcome! Please ensure:
-
-1. Code follows the project style (see CLAUDE.md)
-2. Security-critical code includes proper validation
-3. All functions are ≤60 lines (extract helpers if needed)
-
 ## License
 
 MIT License - see [LICENSE](LICENSE)
@@ -170,4 +154,3 @@ MIT License - see [LICENSE](LICENSE)
 
 - Original WinRing0 by hiyohiyo (2007-2009)
 - Security research by Matt Hand (CVE-2020-14979 discovery)
-- ziX Performance Labs (SafeRing0 implementation)
