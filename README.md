@@ -2,6 +2,8 @@
 
 A secure, drop-in replacement for the vulnerable WinRing0 driver (CVE-2020-14979).
 
+EV Certificate Shortly.
+
 ## Overview
 
 SafeRing0 provides WinRing0-compatible hardware access (MSR, physical memory, I/O ports, PCI config) with proper security controls that the original WinRing0 driver lacked.
