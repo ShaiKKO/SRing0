@@ -6,7 +6,7 @@ EV Certificate Shortly.
 
 ## Overview
 
-SafeRing0 provides WinRing0 compatible hardware access (MSR, physical memory, I/O ports, PCI config) with actual security controls that the original WinRing0 driver did not implement.
+SafeRing0 provides WinRing0 compatible hardware access (MSR, physical memory, I/O ports, PCI config) with actual security controls that the original WinRing0 driver lacks.
 
 SafeRing0 does this by:
 
