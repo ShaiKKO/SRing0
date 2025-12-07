@@ -3,7 +3,7 @@
  * Organization: ziX Performance Labs
  * File: winring0_compat.c
  * Version: 1.0
- * Date: 2025-12-06
+ * Date: 2025-11-06
  * Copyright:
  *   (c) 2025 ziX Performance Labs. All rights reserved. Proprietary and
  *   confidential. Redistribution or disclosure without prior written consent
@@ -71,10 +71,10 @@ static const WCHAR g_DeviceNameCompat[] = L"\\\\.\\WinRing0_1_2_0";
 
 /* PCI functions forward-declared for use by Byte/Word variants */
 __declspec(dllexport) DWORD WINAPI ReadPciConfigDword(DWORD pciAddress,
-                                                       BYTE regAddress);
+                                                      BYTE regAddress);
 __declspec(dllexport) void WINAPI WritePciConfigDword(DWORD pciAddress,
-                                                       BYTE regAddress,
-                                                       DWORD value);
+                                                      BYTE regAddress,
+                                                      DWORD value);
 
 /*--------------------------------------------------------------------------*/
 /* Internal Helpers                                                         */

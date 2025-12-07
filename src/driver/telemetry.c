@@ -38,8 +38,8 @@
  * 2. evntrace.h for ETW support
  * 3. TraceLoggingProvider.h for TraceLogging macros
  */
-#include <evntrace.h>
 #include <TraceLoggingProvider.h>
+#include <evntrace.h>
 
 #include "..\..\include\safering0_public.h"
 #include "safering0_main.h"
