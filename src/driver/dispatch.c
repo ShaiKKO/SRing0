@@ -5,10 +5,7 @@
  * Version: 1.0
  * Date: 2025-10-03
  * Copyright:
- *   (c) 2025 ziX Performance Labs. All rights reserved. Proprietary and
- *   confidential. Redistribution or disclosure without prior written consent
- *   is prohibited.
- * SPDX-License-Identifier: MIT
+ *   (c) 2025 ziX Performance Labs.
  *
  * Summary:
  *   SafeRing0 - IOCTL Dispatch Implementation

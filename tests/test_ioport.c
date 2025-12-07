@@ -5,8 +5,7 @@
  * Version: 1.0
  * Date: 2025-12-06
  * Copyright:
- *   (c) 2025 ziX Performance Labs. All rights reserved.
- * SPDX-License-Identifier: MIT
+ *   (c) 2025 ziX Performance Labs.
  *
  * Summary:
  *   SafeRing0 Test Suite - I/O Port Tests

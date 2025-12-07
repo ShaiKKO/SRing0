@@ -7,9 +7,7 @@
  * Version: 1.0
  * Date: 2025-12-04
  * Copyright:
- *   (c) 2025 ziX Performance Labs. All rights reserved. Proprietary and
- *   confidential. Redistribution or disclosure without prior written consent
- *   is prohibited.
+ *   (c) 2025 ziX Performance Labs.
  *
  * Summary:
  * SafeRing0 - WinRing0-Compatible IOCTL Definitions
@@ -33,7 +31,8 @@
 #endif
 #include <windows.h>
 #include <winioctl.h>
-/* PHYSICAL_ADDRESS is only defined in kernel mode; provide user-mode equivalent */
+/* PHYSICAL_ADDRESS is only defined in kernel mode; provide user-mode equivalent
+ */
 typedef LARGE_INTEGER PHYSICAL_ADDRESS;
 #endif
 

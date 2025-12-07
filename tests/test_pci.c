@@ -5,8 +5,7 @@
  * Version: 1.0
  * Date: 2025-12-06
  * Copyright:
- *   (c) 2025 ziX Performance Labs. All rights reserved.
- * SPDX-License-Identifier: MIT
+ *   (c) 2025 ziX Performance Labs.
  *
  * Summary:
  *   SafeRing0 Test Suite - PCI Configuration Tests
@@ -32,9 +31,10 @@ static void Test_PCI001_ReadVendorId(void) {
 
   g_TestCount++;
   if (vendorId != 0xFFFF) {
-    printf("  [PASS] PCI-001: Host bridge found - Vendor: 0x%04X, Device: "
-           "0x%04X\n",
-           vendorId, deviceId);
+    printf(
+        "  [PASS] PCI-001: Host bridge found - Vendor: 0x%04X, Device: "
+        "0x%04X\n",
+        vendorId, deviceId);
     g_PassCount++;
 
     /* Check for known vendors */
