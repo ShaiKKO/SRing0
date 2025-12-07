@@ -174,10 +174,7 @@ SafeRing0 does NOT protect against:
 
 If you discover a security vulnerability in SafeRing0:
 
-1. **Do NOT** create a public GitHub issue
-2. Email **colin@teraflux.app** with details
-3. Allow 1-30 days for patch development/Microsoft coordination
-4. public disclosure
+ Email **colin@teraflux.app** with details
 
 ## Version History
 
